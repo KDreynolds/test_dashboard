@@ -1,0 +1,162 @@
+[
+    {
+        "service": "Auth DB",
+        "status": "Online",
+        "details": "Running smoothly.",
+        "moreDetails": {
+            "uptime": "99.9%",
+            "responseTime": "0.2s",
+            "lastUpdated": "2021-09-01T12:00:00.000Z"
+        }
+    },
+    {
+        "service": "Camunda7",
+        "status": "Offline",
+        "details": "Under maintenance.",
+        "moreDetails": {
+            "uptime": "99.5%",
+            "responseTime": "1.2s",
+            "lastUpdated": "2023-12-05T12:00:00.000Z"
+        }
+    },
+    {
+        "service": "Hasura",
+        "status": "Online",
+        "details": "No issues reported.",
+        "moreDetails": {
+            "uptime": "99.8%",
+            "responseTime": "0.3s",
+            "lastUpdated": "2022-01-01T12:00:00.000Z"
+        }
+    },
+    {
+        "service": "ElevationFlaggerAPI",
+        "status": "Online",
+        "details": "Performance is optimal.",
+        "moreDetails": {
+            "uptime": "99.7%",
+            "responseTime": "0.4s",
+            "lastUpdated": "2022-02-02T12:00:00.000Z"
+        }
+    },
+    {
+        "service": "GMLConnect",
+        "status": "Offline",
+        "details": "Unexpected downtime.",
+        "moreDetails": {
+            "uptime": "98.5%",
+            "responseTime": "1.5s",
+            "lastUpdated": "2022-03-03T12:00:00.000Z"
+        }
+    },
+    {
+        "service": "Voxel 51",
+        "status": "Online",
+        "details": "All systems functional.",
+        "moreDetails": {
+            "uptime": "99.6%",
+            "responseTime": "0.5s",
+            "lastUpdated": "2022-04-04T12:00:00.000Z"
+        }
+    },
+    {
+        "service": "Snowflake",
+        "status": "Limited",
+        "details": "Partial service available.",
+        "moreDetails": {
+            "uptime": "95.0%",
+            "responseTime": "2.0s",
+            "lastUpdated": "2022-05-05T12:00:00.000Z"
+        }
+    },
+    {
+        "service": "Avalanche",
+        "status": "Overloaded",
+        "details": "Experiencing high traffic.",
+        "moreDetails": {
+            "uptime": "90.0%",
+            "responseTime": "3.0s",
+            "lastUpdated": "2022-06-06T12:00:00.000Z"
+        }
+    },
+    {
+        "service": "GMLCrypt",
+        "status": "Updating",
+        "details": "Currently rolling out updates.",
+        "moreDetails": {
+            "uptime": "99.0%",
+            "responseTime": "0.6s",
+            "lastUpdated": "2022-07-07T12:00:00.000Z"
+        }
+    },
+    {
+        "service": "Storage1",
+        "status": "Online",
+        "details": "Running at full capacity.",
+        "moreDetails": {
+            "uptime": "99.4%",
+            "responseTime": "0.7s",
+            "lastUpdated": "2022-08-08T12:00:00.000Z"
+        }
+    },
+    {
+        "service": "Capture Validation API",
+        "status": "Degraded",
+        "details": "Service is slow.",
+        "moreDetails": {
+            "uptime": "96.0%",
+            "responseTime": "2.5s",
+            "lastUpdated": "2022-09-09T12:00:00.000Z"
+        }
+    },
+    {
+        "service": "ZohoCRM",
+        "status": "Online",
+        "details": "Operational.",
+        "moreDetails": {
+            "uptime": "99.3%",
+            "responseTime": "0.8s",
+            "lastUpdated": "2022-10-10T12:00:00.000Z"
+        }
+    },
+    {
+        "service": "Flight Planning",
+        "status": "Error",
+        "details": "Encountered an error.",
+        "moreDetails": {
+            "uptime": "98.1%",
+            "responseTime": "1.5s",
+            "lastUpdated": "2023-11-20T10:00:00.000Z"
+        }
+    },
+    {
+        "service": "RClone",
+        "status": "Testing",
+        "details": "In testing phase.",
+        "moreDetails": {
+            "uptime": "95.3%",
+            "responseTime": "0.9s",
+            "lastUpdated": "2023-12-01T14:00:00.000Z"
+        }
+    },
+    {
+        "service": "Point Cloud Alignment",
+        "status": "Offline",
+        "details": "Offline for scheduled maintenance.",
+        "moreDetails": {
+            "uptime": "99.9%",
+            "responseTime": "0.2s",
+            "lastUpdated": "2023-12-05T16:00:00.000Z"
+        }
+    },
+    {
+        "service": "Auth",
+        "status": "Limited",
+        "details": "Limited functionality due to updates.",
+        "moreDetails": {
+            "uptime": "99.5%",
+            "responseTime": "1.2s",
+            "lastUpdated": "2023-12-06T18:00:00.000Z"
+        }
+    }
+]

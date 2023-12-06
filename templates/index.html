@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <!-- HTML-lang Script -->
+    <script src="html.js"></script> 
+    
+</head>
+<body>
+    <header class="navbar">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="https://bulma.io">
+                <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+              </a>
+            </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start">
+                </div>
+              </div> 
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <div class="columns is-multiline">
+            {% for updated_service in updated_services %}
+            <div class="column is-3">
+                <div class="box">
+                    <nav class="panel {{ updated_service.status }}"><br>
+                        <p class="panel-heading">
+                            {{ services[loop.index0].service }}
+                        </p>
+                        <div class="panel-block">
+                            <div class="columns is-mobile">
+                                <div class="column">
+                                    <p class="subtitle is-6 has-text-weight-bold mb-2">Status: {{ services[loop.index0].status }}</p>
+                                </div>
+                                <div class="column">
+                                    <p class="has-text-grey">{{ services[loop.index0].details }}</p><br>
+                                </div>
+                                <div id="modal-{{ loop.index0 }}" class="modal">
+                                    <div class="modal-background"></div>
+                                    <div class="modal-content">
+                                        <!-- Service details -->
+                                        <p>Uptime: {{ services[loop.index0].moreDetails.uptime }}</p>
+                                        <p>Response Time: {{ services[loop.index0].moreDetails.responseTime }}</p>
+                                        <p>Last Updated: {{ services[loop.index0].moreDetails.lastUpdated }}</p>
+                                    </div>
+                                    <button class="modal-close is-large" id="close-modal-{{ loop.index0 }}" aria-label="close"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </main>
+
+    <footer class="footer">
+        <!-- Footer content -->
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var modalButtons = document.querySelectorAll('.modal-button');
+            var closeButtons = document.querySelectorAll('.modal-close');
+                    
+            modalButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    var target = document.querySelector(button.getAttribute('data-target'));
+                    target.classList.add('is-active');
+                });
+            });
+        
+            closeButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    var modal = button.closest('.modal');
+                    modal.classList.remove('is-active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

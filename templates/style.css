@@ -1,0 +1,24 @@
+.status-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.status-indicator.online {
+    background-color: green;
+}
+
+.status-indicator.offline {
+    background-color: red;
+}
+
+.status-indicator.limited,
+.status-indicator.overloaded,
+.status-indicator.updating,
+.status-indicator.degraded,
+.status-indicator.error,
+.status-indicator.testing {
+    background-color: yellow;
+}
+
